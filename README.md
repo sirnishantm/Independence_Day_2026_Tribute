@@ -7,7 +7,7 @@ A tribute website for India's Independence Day, created on 15 August 2026. The p
 
 ## Live Website
 
-[https://independence-day-2026-tribute.vercel.app/] (https://independence-day-2026-tribute.vercel.app/)
+[https://independence-day-2026-tribute.vercel.app/](https://independence-day-2026-tribute.vercel.app/)
 
 ## Highlights
 
