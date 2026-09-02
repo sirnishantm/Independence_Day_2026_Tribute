@@ -1,12 +1,13 @@
 # Independence Day 2026 Tribute
 
-[![Live Website](https://img.shields.io/badge/Live_Website-Visit-success?style=for-the-badge)](https://independencedaywebpage2025.netlify.app/)
+[![Live Website](https://img.shields.io/badge/Live_Website-Visit-success?style=for-the-badge)]
+[(https://independence-day-2026-tribute.vercel.app/)]
 
 A tribute website for India's Independence Day, created on 15 August 2026. The project presents important moments from India's freedom movement with historical images and patriotic audio.
 
 ## Live Website
 
-[https://independencedaywebpage2025.netlify.app/](https://independencedaywebpage2025.netlify.app/)
+[https://independence-day-2026-tribute.vercel.app] (https://independence-day-2026-tribute.vercel.app/)
 
 ## Highlights
 
