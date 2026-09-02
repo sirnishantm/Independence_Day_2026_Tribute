@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=1e83a57d-a904-46d5-85bc-de536463b76a
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="hosting-provider" content="Netlify">
+    <meta name="netlify-deploy"
+        content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=1e83a57d-a904-46d5-85bc-de536463b76a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day - Historical Journey</title>
+    <meta name="description"
+        content="A modern, interactive 3D carousel timeline of key events leading to India's Independence (1857–1947).">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background video -->
+    <div class="background-video" aria-hidden="true">
+        <video id="bgVideo" src="assets/Vande Mataram - A.R. Rahman Maa Tujhe Salaam Independence Day Song.mp4" autoplay
+            muted loop playsinline></video>
+    </div>
+    <h1 class="about-title">INDEPENDENCE DAY</h1>
+
+    <div class="carousel-container">
+        <button class="nav-arrow left" type="button" aria-label="Previous event">‹</button>
+        <div class="carousel-track">
+            <div class="loading-state">Loading historical events...</div>
+        </div>
+        <button class="nav-arrow right" type="button" aria-label="Next event">›</button>
+    </div>
+
+    <div class="member-info">
+        <h2 class="member-name" id="eventName">First War of Independence</h2>
+        <p class="member-role" id="eventDate">1857</p>
+    </div>
+
+    <div class="dots" id="dotsContainer" role="tablist" aria-label="Event navigation">
+        <!-- Dots will be dynamically generated -->
+    </div>
+
+    <div class="scroll-indicator">
+        <span>Scroll to navigate</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+    </div>
+
+    <!-- Details section removed as per request -->
+
+
+
+    <!-- Fullscreen overlay for full descriptions -->
+    <div class="overlay-backdrop" id="detailOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="overlay-dialog">
+            <div class="overlay-header">
+                <div class="overlay-title">Event Details</div>
+                <button class="overlay-close" id="overlayClose" type="button" aria-label="Close">×</button>
+            </div>
+            <div class="overlay-body">
+                <img id="overlayImage" class="overlay-image" src="" alt="">
+                <div class="overlay-content">
+                    <div id="overlayName" class="overlay-event-name"></div>
+                    <div id="overlayDate" class="overlay-event-date"></div>
+                    <div id="overlayDesc" class="overlay-event-desc"></div>
+                    <div id="overlayQuote" class="overlay-quote" aria-hidden="true"></div>
+                    <a id="overlayCta" class="overlay-cta" href="#" target="_blank" rel="noopener"
+                        aria-hidden="true">Learn more about this event →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background music and toggle -->
+    <div class="audio-control" aria-live="polite">
+        <button id="audioToggle" type="button" aria-label="Toggle background music">🔇</button>
+        <audio id="bgAudio" src="assets/maa tujhe salam.mp3" loop preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
